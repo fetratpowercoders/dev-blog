@@ -1,12 +1,23 @@
 /* RESET
-----------------------------------------------*/
-/* #region */
+---------------------------------------------*/
+ #region 
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
-/*Make the box model border-box by default*/
+
+
 html {
   box-sizing: border-box;
 }
+
+
+/*LINKS*/
+
+a {
+  text-decoration: ;
+  outline: none;
+
+}
+
 /* #endregion */
 
 
@@ -14,54 +25,85 @@ html {
 
 /* BASIC FORMATTING
 ----------------------------------------------*/
+
 html {
   font-size: 16px;
-  scroll-behavior: smooth;
 }
 
-body {
+body{
+  font-family: 'Roboto', sans-serif
+  color: black;
   font-size: 1rem;
-  font-family: sans-serif;
-  color: #212121;
   line-height: 1.5;
+  background-color: white;
+  
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Ro;
 }
 
 
-/*LINKS*/
-a {
-  text-decoration: none;
-  color: coral;
-  outline: none;
-  transition: color 1s ease;
-}
-a:hover {
-  color: darkred;
+P {
+  margin-bottom: 1em;
 }
 
-/*FORM ELEMENTS*/
-button {
-  background: none;
-  border: none;
-}
-input, input:focus {
-  border: none;
-  outline: none;
+.container{
+  width: 70%;
+  margin: auto;
+  overflow: hidden;
+
 }
 
-/*TITLES*/
-h1,
-h2 {
+
+ul{
+  margin-top: 0;
+  padding:0;
+}
+
+
+
+
+header{
+  color:white;
+  padding-top: 10px;
+  min-height: 10px;
+  background-image: url(../img/camera.jpg);
+  
+}
+
+
+header a{
+  color: white;
+  text-decoration:none;
+  font-size: 16px;
+  
+}
+
+
+header li{
+  float: center;
+  display: inline;
+  padding: 0 20 0 20px;
+}
+
+
+header nav{
+  float: right;
+
+  margin-bottom: 100px;
+  margin-right: 50px;
+}
+
+header .highlight, header .current a{
+  color: rgb(248, 236, 236);
   font-weight: bold;
 }
 
-p {
-  margin-bottom: 1em; /*16px*/
+header a:hover{
+  color: rgb(243, 239, 247);
+  font-weight: bold;
 }
-
-
-
-
-
 
 /* HELPER CLASSES
 ----------------------------------------------*/
@@ -69,11 +111,72 @@ p {
 
 
 
-/* LAYOUT
+/* LAYOUT    
 ----------------------------------------------*/
-
 
 
 
 /* MEDIA QUERIES
 ----------------------------------------------*/
+
+
+
+
+
+/*Showcases*/
+
+
+  #Showcase{
+    min-height: 400px;
+ 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    
+  }
+
+  #Showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+  }
+
+  #Showcase p{
+    font-size: 20px;
+  }
+
+
+/*boxes*/
+
+#boxes{
+  margin-top:20px;
+
+}
+
+#boxes .box{
+  float:left;
+  text-align: center ;
+  width:30%;
+  padding:10px;
+
+}
+
+#boxes .box img{
+  width: 90px;
+
+}
+
+footer{
+  padding-top: 10px;
+  padding-bottom: 15px;
+  color: white;
+  background-color: black;
+  text-align: center;
+  back
+}
+
+
+
+
+

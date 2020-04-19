@@ -22,6 +22,6 @@ Visual Studio Code is a source code editor that can be used with a variety of pr
 #### Each sections requires good practice for the students to be able to work with them.
 
 ## IMAGES
-<img src="assest/../assets/img/Thinking-of-getting-a-cat.png" alt="small cat">
+<img src="assest/../assets/img/Thinking-of-getting-a-cat.png" alt="small cat"> :) 
 
 
