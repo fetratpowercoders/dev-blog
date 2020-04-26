@@ -13,11 +13,11 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 html {
   box-sizing: border-box;
 }
-
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 /* #endregion */
-
-/* SINGLE COMMENT */
 
 
 /* BASIC FORMATTING
@@ -25,8 +25,9 @@ html {
 
 /* root formats */
 html {
-  font-size: 16px; /* font pixel size should always be to root */
+  font-size: 13px; /* font pixel size should always be to root */
   scroll-behavior: smooth;
+  
 }
 
 /* the body formats */
@@ -34,13 +35,16 @@ body {
   font-size: 1rem; /* rem is related to the root (html), but em is related to the parent */
   font-family: sans-serif;
   color: black;
-  line-height: 1.4;
+  line-height: 1.45;
+  background-color:#F0F2F4;
 }
+
+
 
 /* links */
 a {
   text-decoration: none;
-  color: darkgrey;
+  color: rgb(54, 54, 66);
   outline: none;
   transition: color 0.5s ease; /* it is the litile animiation when i point on the link */
 }
@@ -64,12 +68,37 @@ input, input:focus {
 /* titles formatting */
 h1, h2 {
   font-weight: 700;
+  font-size: 1.25rem;
 }
+h3 { 
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+
 p {
   margin-bottom: 1em;
+  font-size: 1rem;
+  color:black;
 }
+
+div {
+  width: auto;
+  border: 5px solid white;
+  padding: 2;
+  margin: 3;
+  position: relative;
+ 
+  
+}
+
+
+  
 /* HELPER CLASSES
 --------------------------------- */
+
+
+
 
 /* margins & paddings */
 .m-x-1 {margin-left: 1rem; margin-right: 1rem;}
@@ -86,6 +115,7 @@ p {
 .p-y-5 {padding-top: 5rem; padding-bottom: 5rem;}
 
 
+
 /* font properities */
 .bold {font-weight: bold;}
 .text-c {text-align: center;}
@@ -100,19 +130,29 @@ p {
  
 
 /* backgroundss */ 
-.red-bg {background-color: crimson;}
-.d-blue-bg {background-color: rgb(10, 10, 44);}
-.img1-bg {background-image: url(/assets/img/camera.jpg);}
 
-
+.bg-dark {background-color: rgb(59, 57, 57);}
+.bg-gray {background-color: #363636;}
+.img1-bg {background-image: url(/assets/img/photo-1522071820081-009f0129c71c.webp); 
+  background-repeat: no-repeat; background-size: cover;
+}
 
 .w-200px {width: 200px;}
+.w-400px {width: 400px;}
 .w-500px {width: 600px;}
 
 .flex {display: flex;}
-.f-right {justify-content: flex-end;}
+.f-right {justify-content: flex-end;}  
+
 /* LAYOUT
 --------------------------------- */
+.main {
+  width: 100%;
+  max-width: 280px;
+
+
+}
+
 
 
 /* MEDIA QUERIES
