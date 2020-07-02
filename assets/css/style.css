@@ -25,79 +25,108 @@ html {
 
 /* root formats */
 html {
-  font-size: 13px; /* font pixel size should always be to root */
+  font-size: 15px; 
   scroll-behavior: smooth;
+  display: block;
   
 }
 
 /* the body formats */
 body {
-  font-size: 1rem; /* rem is related to the root (html), but em is related to the parent */
+  font-size: 1.45rem; 
   font-family: sans-serif;
   color: black;
-  line-height: 1.45;
-  background-color:#F0F2F4;
+  line-height: 1em;
+  background-color:whitesmoke;
 }
 
+nav {
+  background-color: white;
+  font-size: 1rem;
+  float: center;
 
+  
+}
+ul {
+  list-style-type: none;
+  margin: 50;
+  padding: 10;
+  overflow: hidden;
+  
 
-/* links */
-a {
-  text-decoration: none;
-  color: rgb(54, 54, 66);
-  outline: none;
-  transition: color 0.5s ease; /* it is the litile animiation when i point on the link */
+}
+ 
+li a {
+  display: inline-block;
+  list-style-position: initial;
+  color: black;
+  text-align: center;
+  padding: 1px 1px;
+  margin: 1px 1px ;
+  text-decoration:none ;
+  font-weight: 500;
+  font-style: initial;
 }
 
-a:hover {
-  color: gray;
+li a:hover:not(.active) {
+  background-color: rgb(222, 230, 233);
+  transition: color 0.1s ease;
 }
 
-/* buttons */
-button {
-  background: none;
-  border: none;
-}
-
-/* inputs */
-input, input:focus {
-  border: none;
-  outline: none;
+.active {
+  background-color: #3be641;
 }
 
 /* titles formatting */
-h1, h2 {
+h1{
   font-weight: 700;
   font-size: 1.25rem;
+
 }
+
+h2{
+  font-weight: 700;
+  font-size: 1.25rem;
+  
+}
+
 h3 { 
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  color:white;
 }
 
-
 p {
-  margin-bottom: 1em;
+  margin-bottom: 3em;
   font-size: 1rem;
   color:black;
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 2px;
 }
 
 div {
   width: auto;
-  border: 5px solid white;
-  padding: 2;
-  margin: 3;
+  border: 1px solid white;
+  padding: 20px;
+  margin: 70px;
   position: relative;
+  background-color:white;
  
   
 }
 
-
   
 /* HELPER CLASSES
 --------------------------------- */
+.left        { float: left; }
+.right       { float: right; }
 
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }
+.text-center { text-align: center; }
 
+.gallery P
 
 
 /* margins & paddings */
@@ -113,6 +142,7 @@ div {
 .p-y-3 {padding-top: 3rem; padding-bottom: 3rem;}
 .p-y-4 {padding-top: 4rem; padding-bottom: 4rem;}
 .p-y-5 {padding-top: 5rem; padding-bottom: 5rem;}
+.p-y-10 {padding-top: 19rem; padding-bottom: 30rem;}
 
 
 
@@ -127,14 +157,17 @@ div {
 .italic {font-style: italic;}
 .uppercase {text-transform: uppercase;}
 
- 
+
+
 
 /* backgroundss */ 
+.img-bg {background-image: url(/assets/img/camera.jpg); background-position: center center; background-repeat: no-repeat;
+  background-attachment: fixed;  background-size: cover; background-repeat: no-repeat;}
 
-.bg-dark {background-color: rgb(59, 57, 57);}
-.bg-gray {background-color: #363636;}
-.img1-bg {background-image: url(/assets/img/photo-1522071820081-009f0129c71c.webp); 
-  background-repeat: no-repeat; background-size: cover;
+.bg-footer {background-color: rgb(129, 24, 50);}
+
+.img1-bg {background-image: url(/assets/img/camera.jpg); 
+  background-repeat: no-repeat; background-size: cover; padding: 200px; 
 }
 
 .w-200px {width: 200px;}
@@ -144,16 +177,18 @@ div {
 .flex {display: flex;}
 .f-right {justify-content: flex-end;}  
 
-/* LAYOUT
+/* MEDIA QUERIES
 --------------------------------- */
-.main {
-  width: 100%;
-  max-width: 280px;
+@media (min-width: 1024px){
 
 
 }
 
+@media ( min-width: 768px){
+
+}
+
+@media (min-width: 480px){
 
 
-/* MEDIA QUERIES
---------------------------------- */
+}
