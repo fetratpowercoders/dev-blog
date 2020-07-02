@@ -126,8 +126,6 @@ div {
 .text-right  { text-align: right; }
 .text-center { text-align: center; }
 
-.gallery P
-
 
 /* margins & paddings */
 .m-x-1 {margin-left: 1rem; margin-right: 1rem;}
@@ -156,6 +154,7 @@ div {
 .l-font {font-size: 3rem;}
 .italic {font-style: italic;}
 .uppercase {text-transform: uppercase;}
+.small {font-weight: 300;}
 
 
 
@@ -184,11 +183,16 @@ div {
 
 }
 
-@media ( min-width: 768px){
+@media ( min-width: 768px)
+{
 
 }
 
-@media (min-width: 480px){
-
+@media (max-width: 480px)
+{
+  .m-x-1 {margin-left: 0.4rem; margin-right: 0.4rem;}
+  .m-x-2 {margin-left: 0.50rem; margin-right: 0.50rem;}
+  .m-x-3 {margin-left: 0.75rem; margin-right: 0.75rem;}
+  .m-x-5 {margin-left: 1rem; margin-right: 1rem;}
 
 }
